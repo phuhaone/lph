@@ -1,0 +1,378 @@
+@import 'reset.css';
+*{
+    box-sizing: border-box;
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Regular';
+    
+} 
+header{
+    width: 100%;
+    background:white;
+    font-size: 13px;
+    padding-inline: 30px;   
+    color: #2a363b;
+}
+
+header .header_top{
+    height: 57px;
+    display: flex;
+    align-items: center;
+    font-family: 'Bold';
+    padding-inline: 30px;
+    
+}
+
+.logo>img{
+    width: 125px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.menu {
+    height: 100%;
+    
+}
+.menu >ul{
+    display: flex;
+    height: inherit;
+    gap: 20px;
+}
+.menu >ul li {
+    height: inherit;
+}
+.menu >ul li a{
+    height: inherit;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+
+}
+.has-dropdown {
+    position: relative;
+}
+.menu .has-dropdown:hover .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+/* dropdown */
+.dropdown {
+    position: absolute;
+    top: 100%;    
+    border-radius: 4px;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+    z-index: 10;
+    right: -120px;
+}
+.menu .menu-dropdown {
+    
+    position: relative;
+}
+.menu .dropdown-item-first {
+    margin-top: 10px;
+    pointer-events: none;
+
+}
+.menu .dropdown-item-first a{
+    white-space: normal;
+    
+}
+.menu .menu-dropdown li {
+    min-width: 200px;
+}
+.menu .menu-dropdown li:last-of-type {
+    margin-bottom: 10px;
+}
+.space-item {
+    width: calc(100% - 40px);
+    height: 1px;
+    background: #dfe3e8;
+    margin-inline: auto;
+    margin-block: 5px;
+}
+.menu .menu-dropdown li:hover {
+    background: #f4f6f8;
+}
+.menu .menu-dropdown li a:hover span{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #08589d;
+}
+.menu .menu-dropdown li a {
+    width: 100%;  
+    padding: 8px 20px;
+    position: relative;
+}
+
+/* sub dropdown */
+
+.menu .has-subdropdown:hover .subdropdown{
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu .subdropdown {
+    min-height: calc(100% + 20px);
+    max-width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background: white;
+    position: absolute;
+    left: 100%;
+    top: -10px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+/*-----*/
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.header_top{
+    border-bottom: 1px solid gray;
+    width: 94.8%;
+    margin-left: 31px;
+}
+.header_bottom{
+    background: #08589d;
+    width: 100%;
+    clear: left;
+
+}
+.menu #sang ul li:last-of-type{
+    
+    margin-left: 50px;   
+}
+.menu #sang ul li a:hover{
+    color: #0099CC;
+}
+.menu #sang1 ul li:last-of-type{
+    
+    margin-left:87px;   
+}
+.menu #sang1 ul li a:hover{
+    color: #0099CC;
+}
+.header_top{
+    display: flex;
+    
+}
+.header_top .nhi{
+    margin-left: 150px;
+    display: flex;
+    
+}
+.header_top .nhi li{
+    padding-right:em ;
+    white-space: nowrap;
+    
+}
+.Uyen{
+height: 50px;
+display: flex;
+align-items: center;
+padding-inline: 30px;
+}
+.logo{
+    
+}
+
+.nhi >ul{
+    display: flex;
+    height: inherit;
+    gap: 20px;
+}
+.nhi .menu-dropdown li a {
+    width: 100%;  
+    padding: 8px 10px;
+    position: relative;
+    
+}
+.nhi .has-subdropdown:hover .subdropdown{
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+.nhi .menu-dropdown li a:hover span{
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 7.5px;
+    height: 50%;
+    width: 2px;
+    background-color: #08589d;
+    
+}
+
+.nhi .menu-dropdown li:last-of-type {
+    margin-bottom: 10px;
+    
+    
+}
+.nhi .menu-dropdown li {
+    min-width: 100px;
+    padding-inline: 130px;
+    height: 15px;
+    margin-top:10px;
+        
+}
+.nhi .dropdown-item-first {
+    margin-top: 10px;
+    pointer-events: none;
+
+}
+.nhi .dropdown-item-first a{
+    white-space: normal;
+}   
+.nhi .menu-dropdown {   
+    position: relative;
+    
+}
+.nhi .has-dropdown:hover .dropdown {
+    opacity: 1;
+    pointer-events: auto;
+}
+.nhi >ul li {
+    height: inherit;
+    
+}
+.nhi >ul li a{
+    height: inherit;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    
+}
+.line-br {
+    display: inline-block;
+    height: 35px;
+    border-right: 1px solid #dfe3e8;
+    margin: 1px 15px 5px 30px;
+    float: left;
+}
+.nhi >li>a {
+    font-size: 14px;
+    line-height: 56px;
+    color: #3d5067;
+    padding: 0 px;
+    margin-left: 20px;
+}
+i {
+    border: none;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 3px;
+    
+    
+    
+}
+.header_top .nhi .dropdown{
+    width: 180px;
+    left: 0px;
+}
+ .nhi .has-dropdown .dropdown .menu-dropdown li a{
+     
+    left:-115px;
+}
+.nhi .has-dropdown .dropdown .menu-dropdown li a:hover{
+    color: #0099CC;
+}
+.nhi li a:hover{
+    color:#0099CC
+}
+.menu ul li a:hover{
+    color: #0099CC;
+}
+
+
+input[type="text"] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline:none;
+    padding: 12px 14px;
+    transition:0.6s ease-in-out;
+    margin-top: 5px;
+    margin-left: 160px;
+  }
+  input[type="text"]:focus{
+    width:222px;
+    background-color:whitesmoke; 
+}
+.col-md-11{
+    width: 999px;   
+    margin-left: 1.5px;
+    margin-top: -5px;
+    -webkit-box-sizing: border-box;
+}
+.txt_lg {
+    text-align: center;
+    font-size: 16px;
+    color: #2a363b;
+   padding-top: 16px;
+    
+    background: white;
+    -webkit-font-smoothing: antialiased;
+}
+div {
+    display: block;
+}
+
+.lg-brand-theme .txt_lg {
+    color: #a9a9a9;
+   
+}
+
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+    float: left;
+}
+.font{
+    width: 95%;
+}
+.chu{
+    width: 95%;
+    padding-top: 100px;
+    margin-left: 210px;
+    font-family: 'brandon_textbold';
+    font-size: 40px;
+    text-shadow:1px 1px 1px;
+}
+.yen{
+    width: 95%;
+}
+.yen1{
+    width:80%;
+    padding-top: 20px;
+    margin-left: 133px;
+    text-align: center;
+    font-family: 'brandon_textregular';
+    font-size: 18px;
+    line-height: 30px;
+    color: #666;
+    padding: 9px 47px;
+}
+#FONT{
+    height: 190px;
+}
